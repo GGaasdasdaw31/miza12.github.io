@@ -1,10 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GG Detailing</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+    line-height: 1.6;
+}
+
+/* HERO */
+header {
+    background: linear-gradient(135deg, #b30000, #0a0a0a);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #d0d0d0;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 26px;
+    background: #b30000;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #ff1a1a;
+    transform: scale(1.05);
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background: rgba(17,17,17,0.95);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4d4d;
+}
+
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #ff4d4d;
+    font-size: 1.8rem;
+}
+
+/* CARDS */
+.card {
+    background: #1a1a1a;
+    padding: 22px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #ff4d4d;
+}
+
+/* CONTACT BUTTON */
+.contact-btn {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    color: #777;
+    margin-top: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+</style>
 </head>
-<body style="background:black; color:white; text-align:center; font-family:Arial;">
-  <h1>My First Website</h1>
-  <p>Made with GitHub Pages 🔥</p>
+
+<body>
+
+<header>
+    <h1>GG Detailing</h1>
+    <p>Premium Mobile Detailing — Clean. Shine. Protect.</p>
+    <a class="button" href="#contact">Book Now</a>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+    <h2>Services</h2>
+
+    <div class="card">
+        <h3>Exterior Detail</h3>
+        <p>Foam wash, wheel cleaning, tire shine, hand dry, and premium exterior finish for a deep clean look.</p>
+    </div>
+
+    <div class="card">
+        <h3>Interior Detail</h3>
+        <p>Deep vacuum, stain removal, dash + console cleaning, plastic restoration, and fresh interior reset.</p>
+    </div>
+
+    <div class="card">
+        <h3>Full Detail</h3>
+        <p>Complete interior + exterior detail for a showroom-level finish inside and out.</p>
+    </div>
+</section>
+
+<section id="pricing">
+    <h2>Pricing</h2>
+
+    <div class="card">
+        <p><strong>Basic Wash:</strong> $40–$60</p>
+        <p><strong>Interior Detail:</strong> $80–$120</p>
+        <p><strong>Full Detail:</strong> $120–$180</p>
+
+        <p style="margin-top:15px;color:#aaa;">
+            *Prices vary depending on vehicle size, condition, and dirt level.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="card">
+        <p>📍 Mobile Service — We come to you</p>
+        <p>📞 Phone: 442-306-7167</p>
+        <p>📸 Instagram: @ggsmobiledetailing</p>
+
+        <a class="button contact-btn"
+           href="https://instagram.com/ggsmobiledetailing"
+           target="_blank">
+           Message on Instagram
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 GG Detailing. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
